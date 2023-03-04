@@ -5,31 +5,31 @@ import java.util.Scanner;
 
 public class Guess {
     public static void main(String[] args) {
-        int number = new Random().nextInt(99) + 1; // здесь загадывается число от 1 до 99
-        int maxAttempts = 10; // здесь задается количество попыток
-        System.out.println("Я загадал число. У тебя " + maxAttempts + " попыток угадать.");
+        int number = new Random().nextInt(99) + 1; // Р·РґРµСЃСЊ Р·Р°РіР°РґС‹РІР°РµС‚СЃСЏ С‡РёСЃР»Рѕ РѕС‚ 1 РґРѕ 99
+        int maxAttempts = 10; // Р·РґРµСЃСЊ Р·Р°РґР°РµС‚СЃСЏ РєРѕР»РёС‡РµСЃС‚РІРѕ РїРѕРїС‹С‚РѕРє
+        System.out.println("РЇ Р·Р°РіР°РґР°Р» С‡РёСЃР»Рѕ. РЈ С‚РµР±СЏ " + maxAttempts + " РїРѕРїС‹С‚РѕРє СѓРіР°РґР°С‚СЊ.");
         try (Scanner scanner = new Scanner(System.in)) {
             int n = scanner.nextInt();
             int tries = 1;
 
             while (maxAttempts > 0) {
                 if (n == number) {
-                    System.out.println("Ты угадал с " + tries + " попытки");
+                    System.out.println("РўС‹ СѓРіР°РґР°Р» СЃ " + tries + " РїРѕРїС‹С‚РєРё");
                     break;
                 } else if (n < number) {
                     maxAttempts--;
-                    System.out.println("Мое число больше! осталось " + maxAttempts + " попыток");
+                    System.out.println("РњРѕРµ С‡РёСЃР»Рѕ Р±РѕР»СЊС€Рµ! РѕСЃС‚Р°Р»РѕСЃСЊ " + maxAttempts + " РїРѕРїС‹С‚РѕРє");
                     if (maxAttempts == 0) {
-                        System.out.println("Ты не угадал!");
+                        System.out.println("РўС‹ РЅРµ СѓРіР°РґР°Р»!");
                         break;
                     }
                     tries++;
                     n = scanner.nextInt();
                 } else {
                     maxAttempts--;
-                    System.out.println("Мое число меньше! осталось " + maxAttempts + " попыток");
+                    System.out.println("РњРѕРµ С‡РёСЃР»Рѕ РјРµРЅСЊС€Рµ! РѕСЃС‚Р°Р»РѕСЃСЊ " + maxAttempts + " РїРѕРїС‹С‚РѕРє");
                     if (maxAttempts == 0) {
-                        System.out.println("Ты не угадал!");
+                        System.out.println("РўС‹ РЅРµ СѓРіР°РґР°Р»!");
                         break;
                     }
                     tries++;
