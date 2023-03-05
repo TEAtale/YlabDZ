@@ -24,6 +24,7 @@ public class Guess {
                     }
                    if (maxAttempts == 0) {
                     System.out.println("Ты не угадал!");
+                    break;
                 }
                 tries++;
                 n = scanner.nextInt();
