@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class Guess {
     public static void main(String[] args) {
         int number = new Random().nextInt(99) + 1; // здесь загадывается число от 1 до 99
-        int maxAttempts = 10; // здесь задается количество попыток
-        System.out.println("Я загадал число. У тебя " + maxAttempts + " попыток угадать.");
+        int maxAttempts = 9; // здесь задается количество попыток
+        System.out.println("Я загадал число. У тебя " + (maxAttempts + 1) + " попыток угадать.");
         try (Scanner scanner = new Scanner(System.in)) {
             int n = scanner.nextInt();
             int tries = 1;
