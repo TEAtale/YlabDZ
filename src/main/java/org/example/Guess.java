@@ -12,21 +12,18 @@ public class Guess {
             int n = scanner.nextInt();
             int tries = 1;
 
-            while (maxAttempts >= 0) {
+            while (maxAttempts > 0) {
+                maxAttempts--;
                 if (n == number) {
                     System.out.println("Ты угадал с " + tries + " попытки");
                     break;
+                } else if (n < number) {
+                    System.out.println("Мое число больше! осталось " + maxAttempts + " попыток");
                 } else {
-                    maxAttempts--;
-                    if (n < number) {
-                        System.out.println("Мое число больше! осталось " + maxAttempts + " попыток");
-                    } else {
-                        System.out.println("Мое число меньше! осталось " + maxAttempts + " попыток");
+                    System.out.println("Мое число меньше! осталось " + maxAttempts + " попыток");
                     }
-                }
                    if (maxAttempts == 0) {
                     System.out.println("Ты не угадал!");
-                    break;
                 }
                 tries++;
                 n = scanner.nextInt();
