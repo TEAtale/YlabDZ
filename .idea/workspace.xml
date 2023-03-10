@@ -7,15 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464d5377-0839-415d-b0e6-5a4a9d4494fd" name="Changes" comment="firstLesson">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Guess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/firstLesson/Guess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MultTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/firstLesson/MultTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Pell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/firstLesson/Pell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Stars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/firstLesson/Stars.java" afterDir="false" />
-    </list>
+    <list default="true" id="464d5377-0839-415d-b0e6-5a4a9d4494fd" name="Changes" comment="second Lesson" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -202,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678047463001</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="second Lesson">
+      <created>1678477066944</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1678477066944</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,7 +239,19 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="secondLesson" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -254,7 +265,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="firstdz" />
     <MESSAGE value="firstLesson" />
-    <option name="LAST_COMMIT_MESSAGE" value="firstLesson" />
+    <MESSAGE value="second Lesson" />
+    <option name="LAST_COMMIT_MESSAGE" value="second Lesson" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
