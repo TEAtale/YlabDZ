@@ -1,4 +1,4 @@
-package secondLesson.sequences;
+package org.example.sequences;
 
 public class SequencesImpl implements Sequences {
     /*A. 2, 4, 6, 8, 10...
@@ -88,13 +88,13 @@ J. 1, 1, 2, 3, 5, 8, 13, 21…
     @Override
     public void h(int n) {
         int temp = 1;
-        for (int i = 1; i <= n; i++) {
+        for (int i = 0; i < n; i++) {
             if (i%2 == 0) {
                 System.out.print(temp + " ");
                 temp++;
             }
             else {
-                System.out.print(0 + " ");
+                System.out.print(temp-temp + " ");
             }
         }
         System.out.println();

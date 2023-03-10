@@ -1,4 +1,4 @@
-package secondLesson.sequences;
+package org.example.sequences;
 
 public interface Sequences {
     /**
