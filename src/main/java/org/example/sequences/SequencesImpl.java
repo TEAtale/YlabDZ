@@ -10,32 +10,32 @@ F. 1, -2, 3, -4, 5, -6...
 G. 1, -4, 9, -16, 25....
 H. 1, 0, 2, 0, 3, 0, 4....
 I. 1, 2, 6, 24, 120, 720...
-J. 1, 1, 2, 3, 5, 8, 13, 21…
+J. 1, 1, 2, 3, 5, 8, 13, 21â€¦
 */
-        @Override
+    @Override
     public void a(int n) {
         int temp = 0;
         for (int i = 0; i < n; i++) {
             temp += 2;
             System.out.print(temp + " ");
         }
-            System.out.println();
+        System.out.println();
     }
 
     @Override
     public void b(int n) {
-            int temp = 1;
-            for (int i = 1; i < n; i++) {
-                System.out.print(temp + " ");
-                temp += 2;
-            }
+        int temp = 1;
+        for (int i = 1; i < n; i++) {
+            System.out.print(temp + " ");
+            temp += 2;
+        }
         System.out.println();
     }
 
     @Override
     public void c(int n) {
         for (int i = 1; i <= n; i++) {
-            System.out.print((int)(Math.pow(i, 2)) + " ");
+            System.out.print((int) (Math.pow(i, 2)) + " ");
         }
         System.out.println();
     }
@@ -43,7 +43,7 @@ J. 1, 1, 2, 3, 5, 8, 13, 21…
     @Override
     public void d(int n) {
         for (int i = 1; i <= n; i++) {
-            System.out.print((int)(Math.pow(i, 3)) + " ");
+            System.out.print((long) (Math.pow(i, 3)) + " ");
         }
         System.out.println();
     }
@@ -65,8 +65,9 @@ J. 1, 1, 2, 3, 5, 8, 13, 21…
             System.out.print(temp + " ");
             if (temp > 0) {
                 temp++;
+            } else {
+                temp--;
             }
-            else { temp--;}
             temp *= -1;
         }
         System.out.println();
@@ -75,10 +76,9 @@ J. 1, 1, 2, 3, 5, 8, 13, 21…
     @Override
     public void g(int n) {
         for (int i = 1; i <= n; i++) {
-            if (i%2 == 0) {
-                System.out.print(i* (-i) + " ");
-            }
-            else {
+            if (i % 2 == 0) {
+                System.out.print(i * (-i) + " ");
+            } else {
                 System.out.print(i * i + " ");
             }
         }
@@ -89,12 +89,11 @@ J. 1, 1, 2, 3, 5, 8, 13, 21…
     public void h(int n) {
         int temp = 1;
         for (int i = 0; i < n; i++) {
-            if (i%2 == 0) {
+            if (i % 2 == 0) {
                 System.out.print(temp + " ");
                 temp++;
-            }
-            else {
-                System.out.print(temp-temp + " ");
+            } else {
+                System.out.print(temp - temp + " ");
             }
         }
         System.out.println();
@@ -102,10 +101,10 @@ J. 1, 1, 2, 3, 5, 8, 13, 21…
 
     @Override
     public void i(int n) {
-        int temp = 1;
+        long temp = 1;
         for (int i = 1; i <= n; i++) {
-            System.out.print(temp*i + " ");
-            temp = temp*i;
+            System.out.print(temp * i + " ");
+            temp = temp * i;
         }
         System.out.println();
     }
@@ -115,12 +114,12 @@ J. 1, 1, 2, 3, 5, 8, 13, 21…
         int temp1 = 1;
         int temp2 = 0;
         int result = 1;
-            for (int i = 0; i < n; i++) {
-                System.out.print(result + " ");
-                result = temp1 + temp2;
-                temp2 = temp1;
-                temp1 = result;
-            }
-            System.out.println();
+        for (int i = 0; i < n; i++) {
+            System.out.print(result + " ");
+            result = temp1 + temp2;
+            temp2 = temp1;
+            temp1 = result;
+        }
+        System.out.println();
     }
 }

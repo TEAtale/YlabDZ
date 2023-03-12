@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="10" />
+    <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="464d5377-0839-415d-b0e6-5a4a9d4494fd" name="Changes" comment="second Lesson">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/firstLesson/Guess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/firstLesson/MultTable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/firstLesson/Pell.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/firstLesson/Stars.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/secondLesson/sequences/Sequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sequences/Sequences.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/secondLesson/sequences/SequencesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sequences/SequencesImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/secondLesson/sequences/SequencesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sequences/SequencesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sequences/Sequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sequences/Sequences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sequences/SequencesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sequences/SequencesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sequences/SequencesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sequences/SequencesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +35,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/complex/MyComplexNumber.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2MXHQDdlFhlWaVDVlk1edy6irpV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -62,13 +69,13 @@
     "settings.editor.selected.configurable": "configurable.group.language"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.SequencesTest">
-    <configuration name="Guess" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.firstLesson.Guess" />
+  <component name="RunManager" selected="Application.StatsAccumulatorTest">
+    <configuration name="ComplexNumberTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.complex.ComplexNumberTest" />
       <module name="dzYlab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.firstLesson.*" />
+          <option name="PATTERN" value="org.example.complex.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.firstLesson.MultTable" />
+    <configuration name="RateLimitedPrinterTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.rateLimitedPrinter.RateLimitedPrinterTest" />
       <module name="dzYlab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.firstLesson.*" />
+          <option name="PATTERN" value="org.example.rateLimitedPrinter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Pell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.firstLesson.Pell" />
+    <configuration name="SnilsValidatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.snilsValidator.SnilsValidatorTest" />
       <module name="dzYlab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.firstLesson.*" />
+          <option name="PATTERN" value="org.example.snilsValidator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SequencesTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="secondLesson.sequences.SequencesTest" />
+    <configuration name="StatsAccumulatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.StatsAccumulator.StatsAccumulatorTest" />
       <module name="dzYlab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="secondLesson.sequences.*" />
+          <option name="PATTERN" value="org.example.StatsAccumulator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,12 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Stars" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.firstLesson.Stars" />
+    <configuration name="org.example.sequences.SequencesTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.sequences.SequencesTest" />
       <module name="dzYlab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.firstLesson.*" />
+          <option name="PATTERN" value="org.example.sequences.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SequencesTest" />
-        <item itemvalue="Application.org.example.firstLesson.Guess" />
-        <item itemvalue="Application.org.example.firstLesson.Pell" />
-        <item itemvalue="Application.org.example.firstLesson.MultTable" />
-        <item itemvalue="Application.org.example.Stars" />
+        <item itemvalue="Application.StatsAccumulatorTest" />
+        <item itemvalue="Application.org.example.sequences.SequencesTest" />
+        <item itemvalue="Application.SnilsValidatorTest" />
+        <item itemvalue="Application.RateLimitedPrinterTest" />
+        <item itemvalue="Application.ComplexNumberTest" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678477538789</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="second Lesson">
+      <created>1678479090678</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1678479090678</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
