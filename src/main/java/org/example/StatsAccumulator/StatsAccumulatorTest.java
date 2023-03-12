@@ -12,5 +12,6 @@ public class StatsAccumulatorTest {
         s.add(8);
         System.out.println(s.getMax()); // 8 - максимальный из переданных
         System.out.println(s.getCount()); // 5 - количество переданных элементов
+        System.out.println(s.getAvg());
     }
 }
