@@ -93,7 +93,7 @@ J. 1, 1, 2, 3, 5, 8, 13, 21…
                 System.out.print(temp + " ");
                 temp++;
             } else {
-                System.out.print(temp - temp + " ");
+                System.out.print(0 + " ");
             }
         }
         System.out.println();
