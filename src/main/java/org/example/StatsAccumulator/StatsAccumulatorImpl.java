@@ -13,7 +13,8 @@ public class StatsAccumulatorImpl implements StatsAccumulator{
         if (value < min) {min = value; }
         count++;
         sum = sum + value;
-        avg = (double) sum/count;
+        if (count != 0) {
+        avg = (double) sum/count;}
     }
 
     @Override
