@@ -2,15 +2,15 @@ package org.example.StatsAccumulator;
 
 public class StatsAccumulatorTest {
     public static void main(String[] args) {
-        StatsAccumulator s = new StatsAccumulatorImpl(); // как то создается
+        StatsAccumulator s = new StatsAccumulatorImpl(); // РєР°Рє С‚Рѕ СЃРѕР·РґР°РµС‚СЃСЏ
         s.add(1);
         s.add(2);
-        System.out.println(s.getAvg()); // 1.5 - среднее арифметическое элементов
+        System.out.println(s.getAvg()); // 1.5 - СЃСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ СЌР»РµРјРµРЅС‚РѕРІ
         s.add(0);
-        System.out.println(s.getMin()); // 0 - минимальное из переданных значений
+        System.out.println(s.getMin()); // 0 - РјРёРЅРёРјР°Р»СЊРЅРѕРµ РёР· РїРµСЂРµРґР°РЅРЅС‹С… Р·РЅР°С‡РµРЅРёР№
         s.add(3);
         s.add(8);
-        System.out.println(s.getMax()); // 8 - максимальный из переданных
-        System.out.println(s.getCount()); // 5 - количество переданных элементов
+        System.out.println(s.getMax()); // 8 - РјР°РєСЃРёРјР°Р»СЊРЅС‹Р№ РёР· РїРµСЂРµРґР°РЅРЅС‹С…
+        System.out.println(s.getCount()); // 5 - РєРѕР»РёС‡РµСЃС‚РІРѕ РїРµСЂРµРґР°РЅРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ
     }
 }
