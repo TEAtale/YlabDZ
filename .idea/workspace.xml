@@ -8,10 +8,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="464d5377-0839-415d-b0e6-5a4a9d4494fd" name="Changes" comment="second Lesson">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StatsAccumulator/StatsAccumulatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/StatsAccumulator/StatsAccumulatorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StatsAccumulator/StatsAccumulatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/StatsAccumulator/StatsAccumulatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rateLimitedPrinter/RateLimitedPrinterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rateLimitedPrinter/RateLimitedPrinterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StatsAccumulator/StatsAccumulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/secondLess/StatsAccumulator/StatsAccumulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StatsAccumulator/StatsAccumulatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/secondLess/StatsAccumulator/StatsAccumulatorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StatsAccumulator/StatsAccumulatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/secondLess/StatsAccumulator/StatsAccumulatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/complex/ComplexNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/secondLess/complex/ComplexNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/complex/ComplexNumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/secondLess/complex/ComplexNumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/complex/MyComplexNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/secondLess/complex/MyComplexNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rateLimitedPrinter/RateLimitedPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/secondLess/rateLimitedPrinter/RateLimitedPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rateLimitedPrinter/RateLimitedPrinterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/secondLess/rateLimitedPrinter/RateLimitedPrinterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rateLimitedPrinter/RateLimitedPrinterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/secondLess/rateLimitedPrinter/RateLimitedPrinterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sequences/Sequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/secondLess/sequences/Sequences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sequences/SequencesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/secondLess/sequences/SequencesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sequences/SequencesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/secondLess/sequences/SequencesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/snilsValidator/SnilsValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/secondLess/snilsValidator/SnilsValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/snilsValidator/SnilsValidatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/secondLess/snilsValidator/SnilsValidatorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/snilsValidator/SnilsValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/secondLess/snilsValidator/SnilsValidatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +46,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/complex/MyComplexNumber.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/complex/MyComplexNumber.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -272,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678612851391</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="second Lesson">
+      <created>1678766117287</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1678766117287</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

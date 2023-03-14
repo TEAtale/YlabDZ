@@ -1,6 +1,4 @@
-package org.example.rateLimitedPrinter;
-
-import java.util.Date;
+package org.example.secondLess.rateLimitedPrinter;
 
 public class RateLimitedPrinterTest {
     public static void main(String[] args) {

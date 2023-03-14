@@ -1,24 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/main/java/org/example/StatsAccumulator/StatsAccumulator.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/org/example/StatsAccumulator/StatsAccumulatorImpl.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/org/example/StatsAccumulator/StatsAccumulatorTest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/org/example/complex/ComplexNumber.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/org/example/complex/ComplexNumberTest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/org/example/complex/MyComplexNumber.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/org/example/firstLesson/Guess.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/firstLess/Guess.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/firstLesson/Guess.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/firstLesson/MultTable.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/org/example/firstLesson/MultTable.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/org/example/rateLimitedPrinter/RateLimitedPrinter.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/org/example/rateLimitedPrinter/RateLimitedPrinterImpl.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/org/example/rateLimitedPrinter/RateLimitedPrinterTest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/org/example/sequences/Sequences.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/org/example/sequences/SequencesImpl.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/org/example/sequences/SequencesTest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/org/example/snilsValidator/SnilsValidator.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/org/example/snilsValidator/SnilsValidatorImpl.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/org/example/snilsValidator/SnilsValidatorTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/StatsAccumulator/StatsAccumulator.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/StatsAccumulator/StatsAccumulator.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/StatsAccumulator/StatsAccumulatorImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/StatsAccumulator/StatsAccumulatorImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/StatsAccumulator/StatsAccumulatorTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/StatsAccumulator/StatsAccumulatorTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/complex/ComplexNumber.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/complex/ComplexNumber.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/complex/ComplexNumberTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/complex/ComplexNumberTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/complex/MyComplexNumber.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/complex/MyComplexNumber.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/rateLimitedPrinter/RateLimitedPrinter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/rateLimitedPrinter/RateLimitedPrinter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/rateLimitedPrinter/RateLimitedPrinterImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/rateLimitedPrinter/RateLimitedPrinterImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/rateLimitedPrinter/RateLimitedPrinterTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/rateLimitedPrinter/RateLimitedPrinterTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/sequences/Sequences.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/sequences/Sequences.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/sequences/SequencesImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/sequences/SequencesImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/sequences/SequencesTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/sequences/SequencesTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/snilsValidator/SnilsValidator.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/snilsValidator/SnilsValidator.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/snilsValidator/SnilsValidatorImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/snilsValidator/SnilsValidatorImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/snilsValidator/SnilsValidatorTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/snilsValidator/SnilsValidatorTest.java" charset="UTF-8" />
   </component>
 </project>

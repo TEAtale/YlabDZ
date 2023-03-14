@@ -1,4 +1,4 @@
-package org.example.StatsAccumulator;
+package org.example.secondLess.StatsAccumulator;
 
 public interface StatsAccumulator {
         /**

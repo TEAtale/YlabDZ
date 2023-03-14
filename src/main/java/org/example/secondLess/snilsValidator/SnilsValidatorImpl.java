@@ -1,4 +1,4 @@
-package org.example.snilsValidator;
+package org.example.secondLess.snilsValidator;
 
 public class SnilsValidatorImpl implements SnilsValidator {
 /*90114404441 control sum = 9*9 + 0*8 + 1*7 + 1*6 + 4*5 + 4*4 + 0*3 + 4*2 + 4*1 = 142 */

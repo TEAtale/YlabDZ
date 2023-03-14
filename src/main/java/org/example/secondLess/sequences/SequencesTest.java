@@ -1,4 +1,4 @@
-package org.example.sequences;
+package org.example.secondLess.sequences;
 
 public class SequencesTest {
     public static void main(String[] args) {
