@@ -10,6 +10,8 @@
     <list default="true" id="464d5377-0839-415d-b0e6-5a4a9d4494fd" name="Changes" comment="second Lesson">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StatsAccumulator/StatsAccumulatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/StatsAccumulator/StatsAccumulatorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StatsAccumulator/StatsAccumulatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/StatsAccumulator/StatsAccumulatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rateLimitedPrinter/RateLimitedPrinterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rateLimitedPrinter/RateLimitedPrinterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +61,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Global Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
@@ -135,9 +137,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.StatsAccumulatorTest" />
+        <item itemvalue="Application.RateLimitedPrinterTest" />
         <item itemvalue="Application.org.example.sequences.SequencesTest" />
         <item itemvalue="Application.SnilsValidatorTest" />
-        <item itemvalue="Application.RateLimitedPrinterTest" />
         <item itemvalue="Application.ComplexNumberTest" />
       </list>
     </recent_temporary>
@@ -263,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678611292033</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="second Lesson">
+      <created>1678612851391</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1678612851391</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

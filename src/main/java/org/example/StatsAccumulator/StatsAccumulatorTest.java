@@ -2,7 +2,7 @@ package org.example.StatsAccumulator;
 
 public class StatsAccumulatorTest {
     public static void main(String[] args) {
-        StatsAccumulator s = new StatsAccumulatorImpl(); // как то создается
+        StatsAccumulator s = new StatsAccumulatorImpl();// как то создается
         s.add(1);
         s.add(2);
         System.out.println(s.getAvg()); // 1.5 - среднее арифметическое элементов

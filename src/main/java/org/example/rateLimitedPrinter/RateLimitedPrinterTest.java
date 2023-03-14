@@ -1,5 +1,7 @@
 package org.example.rateLimitedPrinter;
 
+import java.util.Date;
+
 public class RateLimitedPrinterTest {
     public static void main(String[] args) {
         RateLimitedPrinter rateLimitedPrinter = new RateLimitedPrinterImpl(1000);
