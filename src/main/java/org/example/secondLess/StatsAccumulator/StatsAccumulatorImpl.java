@@ -1,4 +1,4 @@
-package org.example.StatsAccumulator;
+package org.example.secondLess.StatsAccumulator;
 
 public class StatsAccumulatorImpl implements StatsAccumulator{
     private int max = Integer.MIN_VALUE;

@@ -1,4 +1,4 @@
-package org.example.StatsAccumulator;
+package org.example.secondLess.StatsAccumulator;
 
 public class StatsAccumulatorTest {
     public static void main(String[] args) {

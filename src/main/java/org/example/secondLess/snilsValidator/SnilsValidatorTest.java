@@ -1,4 +1,4 @@
-package org.example.snilsValidator;
+package org.example.secondLess.snilsValidator;
 
 public class SnilsValidatorTest {
     public static void main(String[] args) {

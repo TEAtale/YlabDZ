@@ -1,4 +1,4 @@
-package org.example.complex;
+package org.example.secondLess.complex;
 
 public class ComplexNumberTest {
     public static void main(String[] args) {

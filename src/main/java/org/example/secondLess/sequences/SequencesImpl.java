@@ -1,4 +1,4 @@
-package org.example.sequences;
+package org.example.secondLess.sequences;
 
 public class SequencesImpl implements Sequences {
     /*A. 2, 4, 6, 8, 10...

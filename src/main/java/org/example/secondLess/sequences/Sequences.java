@@ -1,4 +1,4 @@
-package org.example.sequences;
+package org.example.secondLess.sequences;
 
 public interface Sequences {
     /**

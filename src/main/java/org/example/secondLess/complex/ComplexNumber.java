@@ -1,4 +1,4 @@
-package org.example.complex;
+package org.example.secondLess.complex;
 
 abstract class ComplexNumber {
     double re;

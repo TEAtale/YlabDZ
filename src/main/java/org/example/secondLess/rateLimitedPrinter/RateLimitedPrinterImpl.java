@@ -1,4 +1,4 @@
-package org.example.rateLimitedPrinter;
+package org.example.secondLess.rateLimitedPrinter;
 
 public class RateLimitedPrinterImpl implements RateLimitedPrinter{
     private final int interval;

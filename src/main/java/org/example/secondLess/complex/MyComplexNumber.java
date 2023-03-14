@@ -1,4 +1,4 @@
-package org.example.complex;
+package org.example.secondLess.complex;
 
 public class MyComplexNumber extends ComplexNumber {
     private final double re;
