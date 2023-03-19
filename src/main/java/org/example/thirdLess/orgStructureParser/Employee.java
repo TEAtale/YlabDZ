@@ -9,7 +9,7 @@ public class Employee {
     private String name;
     private String position;
     private Employee boss;
-    private List<Employee> subordinate = new ArrayList<>();
+    private final List<Employee> subordinate = new ArrayList<>();
     public Long getId() {
         return id;
     }

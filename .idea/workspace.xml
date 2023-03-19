@@ -10,6 +10,10 @@
     <list default="true" id="464d5377-0839-415d-b0e6-5a4a9d4494fd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdLess/orgStructureParser/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdLess/orgStructureParser/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdLess/orgStructureParser/OrgStructureParserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdLess/orgStructureParser/OrgStructureParserImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdLess/orgStructureParser/OrgStructureParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdLess/orgStructureParser/OrgStructureParserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StatsAccumulatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.StatsAccumulator.StatsAccumulatorTest" />
+    <configuration name="PasswordValidator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.thirdLess.passwordValidator.PasswordValidator" />
       <module name="dzYlab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.StatsAccumulator.*" />
+          <option name="PATTERN" value="org.example.thirdLess.passwordValidator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.secondLess.snilsValidator.SnilsValidatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.secondLess.snilsValidator.SnilsValidatorTest" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.thirdLess.fileSort.Test" />
       <module name="dzYlab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.secondLess.snilsValidator.*" />
+          <option name="PATTERN" value="org.example.thirdLess.fileSort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,10 +144,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.OrgStructureParserTest" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.PasswordValidator" />
         <item itemvalue="Application.DatedMapTest" />
         <item itemvalue="Application.org.example.thirdLess.tranliterator.TransliteratorTest" />
-        <item itemvalue="Application.org.example.secondLess.snilsValidator.SnilsValidatorTest" />
-        <item itemvalue="Application.StatsAccumulatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -282,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678766117287</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="первые три задачи">
+      <created>1679161670383</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1679161670384</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -347,7 +358,8 @@
     <MESSAGE value="firstdz" />
     <MESSAGE value="firstLesson" />
     <MESSAGE value="second Lesson" />
-    <option name="LAST_COMMIT_MESSAGE" value="second Lesson" />
+    <MESSAGE value="первые три задачи" />
+    <option name="LAST_COMMIT_MESSAGE" value="первые три задачи" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

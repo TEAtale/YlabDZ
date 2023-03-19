@@ -5,9 +5,10 @@ import java.io.IOException;
 
 public class OrgStructureParserTest {
     public static void main(String[] args) throws IOException {
-        File file = new File("src/main/resources/file.txt");
+        File file = new File("src/main/resources/file.csv");
         OrgStructureParser parser = new OrgStructureParserImpl();
-        Employee employee = parser.parseStructure(file);
-        System.out.println(employee.getName() + " " + employee.getPosition() + " Подчиненные:" + employee.getSubordinate());
+        Employee boss = parser.parseStructure(file);
+        System.out.println(boss.getName() + " " + boss.getPosition() + " Подчиненные:" + boss.getSubordinate());
+        System.out.println(boss.getBoss());
     }
 }

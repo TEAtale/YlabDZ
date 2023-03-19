@@ -36,6 +36,7 @@ public class OrgStructureParserImpl implements OrgStructureParser {
                     }
                 }
             }
+            reader.close();
             return boss;
         } catch (FileNotFoundException fnfe) {
             System.out.println("Не найден файл");
