@@ -1,18 +1,79 @@
 package org.example.thirdLess.fileSort;
 
 import java.io.*;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class Sorter {
     public File sortFile(File dataFile) throws IOException {
+        int partsNumber = 10;
+        List<String> lines = Files.readAllLines(Paths.get(dataFile.getAbsolutePath()));
+        int linesPerPart = lines.size() / partsNumber;
+        // Create and sort parts
+        for (int i = 0; i < partsNumber; i++) {
+            File partFile = new File("part" + i + ".txt");
+            BufferedWriter writer = new BufferedWriter(new FileWriter(partFile));
+
+            List<String> partLines = new ArrayList<>();
+            List<Long> partLonges = new ArrayList<>();
+            if (i == partsNumber - 1) {
+                partLines.addAll(lines.subList(i * linesPerPart, lines.size()));
+                for (String str:partLines){
+                    partLonges.add(Long.parseLong(str));
+                }
+            } else {
+                partLines.addAll(lines.subList(i * linesPerPart, (i + 1) * linesPerPart));
+                for (String str:partLines){
+                    partLonges.add(Long.parseLong(str));
+                }
+            }
+
+            Collections.sort(partLonges);
+            for (Long l: partLonges) {
+                writer.write(String.valueOf(l));
+                writer.newLine();
+            }
+
+            writer.close();
+        }
+
+        // Merge parts
+        List<Long> sortedLines = new ArrayList<>();
+        for (int i = 0; i < partsNumber; i++) {
+            List<String> partLines = Files.readAllLines(Paths.get("part" + i + ".txt"));
+            for (String line:partLines) {
+                sortedLines.add(Long.parseLong(line));
+            }
+        }
+
+        Collections.sort(sortedLines);
+
+        // Write sorted lines to file
+        File newFile = new File("sortedFile.txt");
+        BufferedWriter writer = new BufferedWriter(new FileWriter(newFile));
+        for (Long l : sortedLines) {
+            writer.write(String.valueOf(l));
+            writer.newLine();
+        }
+
+        writer.close();
+
+        // Delete parts
+        for (int i = 0; i < partsNumber; i++) {
+            File partFile = new File("part" + i + ".txt");
+            partFile.delete();
+        }
+
+        return newFile;
+    }
+
+
+}
+
+/*public File sortFile(File dataFile) throws IOException {
 
         Path path = Paths.get(dataFile.toURI());
         long countLines = Files.lines(path).count();
@@ -74,8 +135,7 @@ public class Sorter {
 
         return t1;
     }
-
-}
+*/
 /*long pointer = 0;
         List<File> files = new ArrayList<>();
 
