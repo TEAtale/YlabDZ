@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/data.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sortedFile.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/firstLess/Guess.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/firstLesson/Guess.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/firstLesson/MultTable.java" charset="UTF-8" />
@@ -24,6 +25,7 @@
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/thirdLess/datedMap/DatedMapImpl.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/thirdLess/datedMap/DatedMapTest.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/thirdLess/fileSort/Generator.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/thirdLess/fileSort/ReadFile.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/thirdLess/fileSort/Sorter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/thirdLess/fileSort/Test.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/thirdLess/fileSort/Validator.java" charset="UTF-8" />

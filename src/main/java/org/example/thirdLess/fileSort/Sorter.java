@@ -43,7 +43,6 @@ public class Sorter {
             }
             writer.close();
         }
-
         // Merge parts
         List<Long> sortedLines = new ArrayList<>();
         for (int i = 0; i < files.size(); i++) {
@@ -52,9 +51,6 @@ public class Sorter {
                 sortedLines.add(Long.parseLong(line));
             }
         }
-
-        //Collections.sort(sortedLines);
-
         // Write sorted lines to file
         File newFile = new File("sortedFile.txt");
         BufferedWriter writer = new BufferedWriter(new FileWriter(newFile));
@@ -64,12 +60,6 @@ public class Sorter {
         }
 
         writer.close();
-       /* Validator validator = new Validator(newFile);
-        if (!validator.isSorted()) {
-            sortFile(newFile);
-        }
-        else { return newFile;}*/
-
         // Delete parts
         for (int i = 0; i < files.size(); i++) {
             File partFile = new File("part" + i + ".txt");
