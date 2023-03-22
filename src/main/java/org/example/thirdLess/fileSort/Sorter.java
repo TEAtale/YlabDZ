@@ -44,21 +44,17 @@ public class Sorter {
             writer.close();
         }
         // Merge parts
-        List<Long> sortedLines = new ArrayList<>();
+        // Write sorted lines to file
+       // List<Long> sortedLines = new ArrayList<>();
+        File newFile = new File("sortedFile.txt");
+        BufferedWriter writer = new BufferedWriter(new FileWriter(newFile));
         for (int i = 0; i < files.size(); i++) {
             List<String> partLines = Files.readAllLines(Paths.get("part" + i + ".txt"));
             for (String line:partLines) {
-                sortedLines.add(Long.parseLong(line));
+                writer.write(line);
+                writer.newLine();
             }
         }
-        // Write sorted lines to file
-        File newFile = new File("sortedFile.txt");
-        BufferedWriter writer = new BufferedWriter(new FileWriter(newFile));
-        for (Long l : sortedLines) {
-            writer.write(String.valueOf(l));
-            writer.newLine();
-        }
-
         writer.close();
         // Delete parts
         for (int i = 0; i < files.size(); i++) {
