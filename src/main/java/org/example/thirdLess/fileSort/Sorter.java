@@ -2,6 +2,7 @@ package org.example.thirdLess.fileSort;
 
 import java.io.*;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -9,12 +10,33 @@ import java.util.List;
 
 public class Sorter {
     public File sortFile(File dataFile) throws IOException {
-        int partsNumber = 10;
+        int partsNumber = 100;
+        Path path = Paths.get(dataFile.toURI());
+        long countLines = Files.lines(path).count();
+        int numRows = (int) (countLines/partsNumber);
         List<String> lines = Files.readAllLines(Paths.get(dataFile.getAbsolutePath()));
         int linesPerPart = lines.size() / partsNumber;
-        // Create and sort parts
-        for (int i = 0; i < partsNumber; i++) {
+        ReadFile rf = new ReadFile(dataFile.getName());
+        List<File> files = rf.splitFile(dataFile.getName(), numRows, "temp");
+
+        //  sort parts
+        for (int i = 0; i < files.size(); i++) {
+            String partName = "temp" + i + ".txt";
+            List<String> partLines = Files.readAllLines(Paths.get(files.get(i).getAbsolutePath()));
+            List<Long> partLonges = new ArrayList<>();
+            for (String str:partLines){
+                partLonges.add(Long.parseLong(str));
+            }
+            Collections.sort(partLonges);
             File partFile = new File("part" + i + ".txt");
+            BufferedWriter writer = new BufferedWriter(new FileWriter(partFile));
+            for (Long l: partLonges) {
+                writer.write(String.valueOf(l));
+                writer.newLine();
+            }
+            writer.close();
+
+            /*File partFile = new File("part" + i + ".txt");
             BufferedWriter writer = new BufferedWriter(new FileWriter(partFile));
 
             List<String> partLines = new ArrayList<>();
@@ -37,7 +59,7 @@ public class Sorter {
                 writer.newLine();
             }
 
-            writer.close();
+            writer.close();*/
         }
 
         // Merge parts
@@ -48,6 +70,7 @@ public class Sorter {
                 sortedLines.add(Long.parseLong(line));
             }
         }
+
 
         Collections.sort(sortedLines);
 
@@ -60,6 +83,11 @@ public class Sorter {
         }
 
         writer.close();
+       /* Validator validator = new Validator(newFile);
+        if (!validator.isSorted()) {
+            sortFile(newFile);
+        }
+        else { return newFile;}*/
 
         // Delete parts
         for (int i = 0; i < partsNumber; i++) {
@@ -72,6 +100,8 @@ public class Sorter {
 
 
 }
+
+
 
 /*public File sortFile(File dataFile) throws IOException {
 
