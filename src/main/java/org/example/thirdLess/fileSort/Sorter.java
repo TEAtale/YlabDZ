@@ -14,7 +14,15 @@ public class Sorter {
         Path path = Paths.get(dataFile.toURI());
         long countLines = Files.lines(path).count();
         int numRows = (int) (countLines/partsNumber);
-
+        File result = sortOneTime(dataFile, numRows);
+        Validator validator = new Validator(result);
+        while (!validator.isSorted()) {
+            numRows = numRows*2;
+            result = sortOneTime(result,numRows);
+        }
+        return result;
+    }
+    public File sortOneTime(File dataFile, int numRows) throws IOException {
         ReadFile rf = new ReadFile(dataFile.getName());
         List<File> files = rf.splitFile(dataFile.getName(), numRows, "part");
 
@@ -38,14 +46,14 @@ public class Sorter {
 
         // Merge parts
         List<Long> sortedLines = new ArrayList<>();
-        for (int i = 0; i < partsNumber; i++) {
+        for (int i = 0; i < files.size(); i++) {
             List<String> partLines = Files.readAllLines(Paths.get("part" + i + ".txt"));
             for (String line:partLines) {
                 sortedLines.add(Long.parseLong(line));
             }
         }
 
-        Collections.sort(sortedLines);
+        //Collections.sort(sortedLines);
 
         // Write sorted lines to file
         File newFile = new File("sortedFile.txt");
@@ -63,13 +71,12 @@ public class Sorter {
         else { return newFile;}*/
 
         // Delete parts
-        for (int i = 0; i < partsNumber; i++) {
+        for (int i = 0; i < files.size(); i++) {
             File partFile = new File("part" + i + ".txt");
             partFile.delete();
         }
 
         return newFile;
     }
-
 
 }
