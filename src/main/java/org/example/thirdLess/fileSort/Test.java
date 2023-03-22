@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class Test {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         File dataFile = new Generator().generate("data.txt", 10000);
         System.out.println(new Validator(dataFile).isSorted()); // false
         File sortedFile = new Sorter().sortFile(dataFile);
