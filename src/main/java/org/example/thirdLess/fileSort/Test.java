@@ -14,6 +14,9 @@ public class Test {
         File sortedFile = new Sorter().sortFile(dataFile);
         System.out.println(new Validator(sortedFile).isSorted());// true
         System.out.println(Files.lines(sortedFile.toPath()).count());
+        File sorted2File = new Sorter2().sortFile(dataFile);
+        System.out.println(new Validator(sorted2File).isSorted());// true
+        System.out.println(Files.lines(sorted2File.toPath()).count());
     }
 
 }

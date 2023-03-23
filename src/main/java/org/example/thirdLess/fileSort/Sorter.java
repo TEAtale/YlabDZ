@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Sorter {
     public File sortFile(File dataFile) throws IOException {
-        int partsNumber = 100;
+        int partsNumber = 2;
         Path path = Paths.get(dataFile.toURI());
         long countLines = Files.lines(path).count();
         int numRows = (int) (countLines/partsNumber);
@@ -47,22 +47,57 @@ public class Sorter {
         // Write sorted lines to file
         // List<Long> sortedLines = new ArrayList<>();
         File newFile = new File("sortedFile.txt");
-        BufferedWriter writer = new BufferedWriter(new FileWriter(newFile));
-        for (int i = 0; i < files.size(); i++) {
-            List<String> partLines = Files.readAllLines(Paths.get("part" + i + ".txt"));
-            for (String line:partLines) {
-                writer.write(line);
-                writer.newLine();
-            }
-        }
-        writer.close();
+        mergeSortedFiles(files, newFile);
         // Delete parts
         for (int i = 0; i < files.size(); i++) {
             File partFile = new File("part" + i + ".txt");
-            partFile.delete();
+            partFile.deleteOnExit();
         }
 
         return newFile;
     }
+    public void mergeSortedFiles(List<File> sorted, File output) throws IOException {
+        List<BufferedReader> readers = new ArrayList<>();
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(output))) {
+            // Открываем BufferedReader для каждого файла и добавляем их в список
+            for (File file : sorted) {
+                BufferedReader reader = new BufferedReader(new FileReader(file));
+                readers.add(reader);
+            }
 
+            // Пока есть открытые BufferedReader, считываем следующую строку из каждого файла
+            // и записываем минимальную в выходной файл
+            while (!readers.isEmpty()) {
+                long minValue = Long.MAX_VALUE;
+                for (BufferedReader reader : readers) {
+                    String line = reader.readLine();
+                    if (line != null) {
+                        long value = Long.parseLong(line);
+                        if (value < minValue) {
+                            minValue = value;
+                        }
+                    } else {
+                        // Если строк больше нет, закрываем BufferedReader
+                        reader.close();
+                        // Удаляем его из списка
+                        readers.remove(reader);
+                        break;
+                    }
+                    // Записываем минимальное значение в выходной файл
+                    writer.write(String.valueOf(minValue));
+                    writer.newLine();
+                }
+
+
+            }
+            // Закрываем все BufferedReader и BufferedWriter
+            for (BufferedReader reader : readers) {
+                reader.close();
+            }
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
+
