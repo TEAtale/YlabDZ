@@ -11,6 +11,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sortedFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sortedFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdLess/fileSort/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdLess/fileSort/ReadFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdLess/fileSort/Sorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdLess/fileSort/Sorter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdLess/fileSort/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdLess/fileSort/Test.java" afterDir="false" />
     </list>
@@ -389,7 +390,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679546443598</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="вернула все к состоянию на вчера">
+      <created>1679548262989</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1679548262989</updated>
+    </task>
+    <task id="LOCAL-00034" summary="вернула все к состоянию на вчера">
+      <created>1679548400646</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1679548400646</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

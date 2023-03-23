@@ -26,11 +26,9 @@ public class ReadFile {
         writer.close();
         return textLine;
     }
-
     List<File> splitFile(int numRows) {
         String st;
         int numFiles = 0;
-
         try {
             String extensionFile = ".txt";
 

@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Sorter {
     public File sortFile(File dataFile) throws IOException {
-        int partsNumber = 2;
+        int partsNumber = 100;
         Path path = Paths.get(dataFile.toURI());
         long countLines = Files.lines(path).count();
         int numRows = (int) (countLines/partsNumber);
@@ -25,7 +25,6 @@ public class Sorter {
     public File sortOneTime(File dataFile, int numRows) throws IOException {
         ReadFile rf = new ReadFile(dataFile.getName());
         List<File> files = rf.splitFile(numRows);
-
         //  sort parts
         for (int i = 0; i < files.size(); i++) {
 
@@ -45,7 +44,6 @@ public class Sorter {
         }
         // Merge parts
         // Write sorted lines to file
-        // List<Long> sortedLines = new ArrayList<>();
         File newFile = new File("sortedFile.txt");
         mergeSortedFiles(files, newFile);
         // Delete parts
@@ -53,7 +51,6 @@ public class Sorter {
             File partFile = new File("part" + i + ".txt");
             partFile.deleteOnExit();
         }
-
         return newFile;
     }
     public void mergeSortedFiles(List<File> sorted, File output) throws IOException {
@@ -64,7 +61,6 @@ public class Sorter {
                 BufferedReader reader = new BufferedReader(new FileReader(file));
                 readers.add(reader);
             }
-
             // Пока есть открытые BufferedReader, считываем следующую строку из каждого файла
             // и записываем минимальную в выходной файл
             while (!readers.isEmpty()) {
@@ -87,14 +83,11 @@ public class Sorter {
                     writer.write(String.valueOf(minValue));
                     writer.newLine();
                 }
-
-
             }
             // Закрываем все BufferedReader и BufferedWriter
             for (BufferedReader reader : readers) {
                 reader.close();
             }
-            writer.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
