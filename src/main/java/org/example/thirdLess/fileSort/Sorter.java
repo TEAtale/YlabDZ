@@ -13,7 +13,9 @@ public class Sorter {
 
         Path path = Paths.get(dataFile.toURI());
         long countLines = Files.lines(path).count();
+        if (countLines != 1){
         int partsNumber = 1;
+
         if (countLines > 1 && countLines < 100) {
             partsNumber = 2;
         }
@@ -26,6 +28,8 @@ public class Sorter {
             result = sortOneTime(result,numRows);
         }
         return result;
+        }
+        return dataFile;
     }
     public File sortOneTime(File dataFile, int numRows) throws IOException {
         ReadFile rf = new ReadFile(dataFile.getName());
