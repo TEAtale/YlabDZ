@@ -8,7 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="464d5377-0839-415d-b0e6-5a4a9d4494fd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sortedFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sortedFile.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdLess/fileSort/Sorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdLess/fileSort/Sorter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/thirdLess/fileSort/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/thirdLess/fileSort/Test.java" afterDir="false" />
     </list>
@@ -415,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679560175680</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Почистила код">
+      <created>1679560688292</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1679560688292</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

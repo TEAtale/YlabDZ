@@ -74,13 +74,16 @@ public class Sorter {
             // и записываем минимальную в выходной файл
             while (!readers.isEmpty()) {
                 long minValue = Long.MAX_VALUE;
+                BufferedReader minValueBR = null;
                 for (BufferedReader reader : readers) {
                     String line = reader.readLine();
                     if (line != null) {
                         long value = Long.parseLong(line);
                         if (value < minValue) {
                             minValue = value;
+                            minValueBR = reader;
                         }
+                        // Записываем минимальное значение в выходной файл
                     } else {
                         // Если строк больше нет, закрываем BufferedReader
                         reader.close();
@@ -88,9 +91,12 @@ public class Sorter {
                         readers.remove(reader);
                         break;
                     }
-                    // Записываем минимальное значение в выходной файл
-                    writer.write(String.valueOf(minValue));
-                    writer.newLine();
+                    if (reader == minValueBR) {
+                        writer.write(String.valueOf(minValue));
+                        writer.newLine();
+                        break;
+                    }
+
                 }
             }
             // Закрываем все BufferedReader и BufferedWriter
