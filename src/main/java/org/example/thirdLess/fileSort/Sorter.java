@@ -10,9 +10,14 @@ import java.util.List;
 
 public class Sorter {
     public File sortFile(File dataFile) throws IOException {
-        int partsNumber = 100;
+
         Path path = Paths.get(dataFile.toURI());
         long countLines = Files.lines(path).count();
+        int partsNumber = 1;
+        if (countLines > 1 && countLines < 100) {
+            partsNumber = 2;
+        }
+        else { partsNumber = 100;}
         int numRows = (int) (countLines/partsNumber);
         File result = sortOneTime(dataFile, numRows);
         Validator validator = new Validator(result);
