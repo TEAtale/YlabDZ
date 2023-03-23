@@ -6,7 +6,7 @@ import java.util.List;
 
 public class ReadFile {
     private BufferedReader br;
-    private List<File> files = new ArrayList<>();
+    private final List<File> files = new ArrayList<>();
 
     ReadFile(String fileName) {
         File file = new File(fileName);
@@ -27,7 +27,7 @@ public class ReadFile {
         return textLine;
     }
 
-    List<File> splitFile(String fileName, int numRows, String theFile) {
+    List<File> splitFile(int numRows) {
         String st;
         int numFiles = 0;
 
@@ -37,7 +37,7 @@ public class ReadFile {
             if (br != null) {
                 st = br.readLine();
                 while (st != null) {
-                    String newName = theFile + numFiles + ".txt";
+                    String newName = "part" + numFiles + extensionFile;
                     st = writeSplitFile(newName, numRows, st);
                     files.add(new File(newName));
                     numFiles++;
