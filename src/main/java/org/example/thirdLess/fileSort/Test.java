@@ -10,8 +10,7 @@ public class Test {
         System.out.println(new Validator(dataFile).isSorted()); // false
         File sortedFile = new Sorter().sortFile(dataFile);
         System.out.println(new Validator(sortedFile).isSorted()); // true
-        File sortedByChunk = new SorterByChunk().sortFile(dataFile);
-        System.out.println(new Validator(sortedByChunk).isSorted());
+
     }
 
 }
