@@ -8,26 +8,27 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+
 public class Sorter {
     public File sortFile(File dataFile) throws IOException {
 
         Path path = Paths.get(dataFile.toURI());
         long countLines = Files.lines(path).count();
         if (countLines != 1){
-        int partsNumber = 1;
+            int partsNumber = 1;
 
-        if (countLines > 1 && countLines < 100) {
-            partsNumber = 2;
-        }
-        else { partsNumber = 100;}
-        int numRows = (int) (countLines/partsNumber);
-        File result = sortOneTime(dataFile, numRows);
-        Validator validator = new Validator(result);
-        while (!validator.isSorted()) {
-            numRows = numRows*2;
-            result = sortOneTime(result,numRows);
-        }
-        return result;
+            if (countLines > 1 && countLines < 100) {
+                partsNumber = 2;
+            }
+            else { partsNumber = 50;}
+            int numRows = (int) (countLines/partsNumber);
+            File result = sortOneTime(dataFile, numRows);
+            Validator validator = new Validator(result);
+            while (!validator.isSorted()) {
+                numRows = numRows*2;
+                result = sortOneTime(result,numRows);
+            }
+            return result;
         }
         return dataFile;
     }
@@ -62,7 +63,7 @@ public class Sorter {
         }
         return newFile;
     }
-    public void mergeSortedFiles(List<File> sorted, File output) throws IOException {
+    public void mergeSortedFiles(List<File> sorted, File output) {
         List<BufferedReader> readers = new ArrayList<>();
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(output))) {
             // Открываем BufferedReader для каждого файла и добавляем их в список
@@ -108,4 +109,3 @@ public class Sorter {
         }
     }
 }
-
