@@ -6,6 +6,12 @@
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/firstLess/Guess.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/firstLesson/Guess.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/firstLesson/MultTable.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/fourthLess/eventsourcing/api/PersonApi.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/fourthLess/filesort/FileSorter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/fourthLess/filesort/FileSorterTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/fourthLess/movie/Movie.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/fourthLess/movie/MovieLoader.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/fourthLess/persistentmap/PersistentMap.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/StatsAccumulator/StatsAccumulator.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/StatsAccumulator/StatsAccumulatorImpl.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/StatsAccumulator/StatsAccumulatorTest.java" charset="UTF-8" />
