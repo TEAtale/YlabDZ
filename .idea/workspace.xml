@@ -7,19 +7,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464d5377-0839-415d-b0e6-5a4a9d4494fd" name="Changes" comment="second Lesson">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/DbUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/DbUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/RabbitMQUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/RabbitMQUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/filesort/FileSortImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/filesort/FileSortImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/filesort/FileSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/filesort/FileSorter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/filesort/FileSorterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/filesort/FileSorterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/movie/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/movie/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/movie/MovieLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/movie/MovieLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/movie/MovieLoaderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/movie/MovieLoaderImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/movie/MovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/movie/MovieTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/persistentmap/PersistenceMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/persistentmap/PersistenceMapTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/persistentmap/PersistentMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/persistentmap/PersistentMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/persistentmap/PersistentMapImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/fourthLess/persistentmap/PersistentMapImpl.java" afterDir="false" />
+    <list default="true" id="464d5377-0839-415d-b0e6-5a4a9d4494fd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Lesson4/eventsourcing/api/ApiApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Lesson4/eventsourcing/api/ApiApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Lesson4/eventsourcing/api/PersonApiImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Lesson4/eventsourcing/api/PersonApiImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Lesson4/eventsourcing/db/DbApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Lesson4/eventsourcing/db/DbApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Lesson4/filesort/FileSorterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Lesson4/filesort/FileSorterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Lesson4/movie/MovieLoaderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Lesson4/movie/MovieLoaderImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +36,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="661734d375a47ae761fc6aa3fb9fc3f247a9cbd4" />
+        <entry key="$PROJECT_DIR$" value="Lesson4" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/org/example/secondLess/complex/MyComplexNumber.java" root0="FORCE_HIGHLIGHTING" />
@@ -66,23 +66,39 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ev00g/IdeaProjects/dzYlab/src/main/java/org/example/Lesson5&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.StatsAccumulatorTest">
-    <configuration name="ComplexNumberTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.complex.ComplexNumberTest" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ev00g\IdeaProjects\dzYlab\src\main\java\org\example\Lesson5" />
+      <recent name="C:\Users\ev00g\IdeaProjects\dzYlab" />
+      <recent name="C:\Users\ev00g\IdeaProjects\dzYlab\src\main\java\org\example\Lesson4\eventsourcing\db" />
+      <recent name="C:\Users\ev00g\IdeaProjects\dzYlab\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.Lesson5" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MessageFilterApp">
+    <configuration name="ApiApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Lesson4.eventsourcing.api.ApiApp" />
       <module name="dzYlab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.complex.*" />
+          <option name="PATTERN" value="org.example.Lesson4.eventsourcing.api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RateLimitedPrinterTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.rateLimitedPrinter.RateLimitedPrinterTest" />
+    <configuration name="FileWriterByWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Lesson5.messagefilter.FileWriterByWords" />
       <module name="dzYlab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.rateLimitedPrinter.*" />
+          <option name="PATTERN" value="org.example.Lesson5.messagefilter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SnilsValidatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.snilsValidator.SnilsValidatorTest" />
+    <configuration name="MessageFilterApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Lesson5.messagefilter.MessageFilterApp" />
       <module name="dzYlab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.snilsValidator.*" />
+          <option name="PATTERN" value="org.example.Lesson5.messagefilter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,12 +132,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StatsAccumulatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.StatsAccumulator.StatsAccumulatorTest" />
+    <configuration name="org.example.Lesson5.eventsourcing.api.ApiApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Lesson5.eventsourcing.api.ApiApp" />
       <module name="dzYlab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.StatsAccumulator.*" />
+          <option name="PATTERN" value="org.example.Lesson5.eventsourcing.api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,12 +145,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.sequences.SequencesTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.sequences.SequencesTest" />
+    <configuration name="org.example.Lesson5.eventsourcing.db.DbApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Lesson5.eventsourcing.db.DbApp" />
       <module name="dzYlab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.sequences.*" />
+          <option name="PATTERN" value="org.example.Lesson5.eventsourcing.db.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,13 +158,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.FileWriterByWords" />
+      <item itemvalue="Application.MessageFilterApp" />
+      <item itemvalue="Application.org.example.Lesson5.eventsourcing.api.ApiApp" />
+      <item itemvalue="Application.org.example.Lesson5.eventsourcing.db.DbApp" />
+      <item itemvalue="Application.ApiApp" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StatsAccumulatorTest" />
-        <item itemvalue="Application.SnilsValidatorTest" />
-        <item itemvalue="Application.RateLimitedPrinterTest" />
-        <item itemvalue="Application.org.example.sequences.SequencesTest" />
-        <item itemvalue="Application.ComplexNumberTest" />
+        <item itemvalue="Application.MessageFilterApp" />
+        <item itemvalue="Application.ApiApp" />
+        <item itemvalue="Application.org.example.Lesson5.eventsourcing.api.ApiApp" />
+        <item itemvalue="Application.FileWriterByWords" />
+        <item itemvalue="Application.org.example.Lesson5.eventsourcing.db.DbApp" />
       </list>
     </recent_temporary>
   </component>
@@ -331,7 +354,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="fourthLesson" />
+                        <option value="Lesson4" />
                       </list>
                     </value>
                   </entry>
