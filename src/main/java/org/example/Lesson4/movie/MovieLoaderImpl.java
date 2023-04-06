@@ -1,6 +1,5 @@
 package org.example.Lesson4.movie;
 
-
 import java.io.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;

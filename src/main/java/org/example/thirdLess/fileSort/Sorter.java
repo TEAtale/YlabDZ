@@ -17,13 +17,17 @@ public class Sorter {
         if (countLines != 1){
             int partsNumber = 1;
 
-            if (countLines > 1 && countLines < 1000) {
+            if (countLines > 1 && countLines < 100) {
                 partsNumber = 2;
             }
-            else { partsNumber = 2;}
+            else { partsNumber = 50;}
             int numRows = (int) (countLines/partsNumber);
             File result = sortOneTime(dataFile, numRows);
-
+            Validator validator = new Validator(result);
+            while (!validator.isSorted()) {
+                numRows = numRows*2;
+                result = sortOneTime(result,numRows);
+            }
             return result;
         }
         return dataFile;
@@ -61,7 +65,6 @@ public class Sorter {
     }
     public void mergeSortedFiles(List<File> sorted, File output) {
         List<BufferedReader> readers = new ArrayList<>();
-        List<Long> longs = new ArrayList<>();
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(output))) {
             // Открываем BufferedReader для каждого файла и добавляем их в список
             for (File file : sorted) {
@@ -71,53 +74,16 @@ public class Sorter {
             // Пока есть открытые BufferedReader, считываем следующую строку из каждого файла
             // и записываем минимальную в выходной файл
             while (!readers.isEmpty()) {
-                long minValue;
-                BufferedReader minValueBR = null;
-                for (BufferedReader reader : readers) {
-                    String line = reader.readLine();
-                    if (line != null) {
-                        long value = Long.parseLong(line);
-                        longs.add(value);
-                        // Записываем минимальное значение в выходной файл
-                    } else {
-                        // Если строк больше нет, закрываем BufferedReader
-                        reader.close();
-                        // Удаляем его из списка
-                        readers.remove(reader);
-                        break;
-                    }
-                }
-                Collections.sort(longs);
-                minValue = longs.get(0);
-                writer.write(String.valueOf(longs.get(0)));
-                writer.newLine();
-                longs.remove(minValue);
-            }
-            if (!longs.isEmpty()) {
-                for (Long l:longs) {
-                    writer.write(String.valueOf(l));
-                    writer.newLine();
-                }
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-}
-/*while (!readers.isEmpty()) {
                 long minValue = Long.MAX_VALUE;
-                //BufferedReader minValueBR = null;
+                BufferedReader minValueBR = null;
                 for (BufferedReader reader : readers) {
                     String line = reader.readLine();
                     if (line != null) {
                         long value = Long.parseLong(line);
                         if (value < minValue) {
                             minValue = value;
+                            minValueBR = reader;
                         }
-                        else {
-                            sortedL.add(value);
-                        }
-                        //longs.add(value);
                         // Записываем минимальное значение в выходной файл
                     } else {
                         // Если строк больше нет, закрываем BufferedReader
@@ -126,24 +92,20 @@ public class Sorter {
                         readers.remove(reader);
                         break;
                     }
+                    if (reader == minValueBR) {
+                        writer.write(String.valueOf(minValue));
+                        writer.newLine();
+                        break;
+                    }
+
                 }
-                writer.write(String.valueOf(minValue));
-                writer.newLine();
-                break;
             }
-           /* if (!longs.isEmpty()) {
-                //Collections.sort(longs);
-                for (Long l:longs) {
-                    writer.write(String.valueOf(l));
-                    writer.newLine();
-                }
-            }*/
-// Закрываем все BufferedReader и BufferedWriter
-          /*  for (Long l:sortedL) {
-                    writer.write(String.valueOf(l));
-                    writer.newLine();
-                    }
-                    } catch (IOException e) {
-                    e.printStackTrace();
-                    }
-                    }*/
+            // Закрываем все BufferedReader и BufferedWriter
+            for (BufferedReader reader : readers) {
+                reader.close();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}

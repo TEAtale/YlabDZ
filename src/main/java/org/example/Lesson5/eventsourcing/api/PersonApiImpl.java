@@ -1,19 +1,13 @@
-package org.example.Lesson4.eventsourcing.api;
+package org.example.Lesson5.eventsourcing.api;
 
-import org.example.Lesson4.eventsourcing.Person;
+import org.example.Lesson5.eventsourcing.Person;
 
-import javax.sql.DataSource;
 import java.util.List;
 
 /**
  * Тут пишем реализацию
  */
 public class PersonApiImpl implements PersonApi {
-
-  private DataSource dataSource;
-
-
-
   @Override
   public void deletePerson(Long personId) {
     
