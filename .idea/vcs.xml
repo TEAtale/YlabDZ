@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/main/java/org/example/fourthLess" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/main/java/org/example/ylab-lesson4-template" vcs="Git" />
   </component>
 </project>
